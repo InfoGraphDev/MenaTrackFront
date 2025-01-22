@@ -1,0 +1,41 @@
+@import "../../../style/style.module.scss";
+
+  .containerField{
+    display: flex;
+    gap: .5rem;
+    align-self: stretch;
+    border-radius: .5rem;
+    height: 2.5rem;  
+    overflow: hidden;
+    border: $md-border-3;
+    background-color: $color-Main !important;
+    input{
+      width: 20rem;
+      background-color: rgba(255, 255, 255, 0) !important;
+    }
+
+    .Search{
+      background-color: var(--bg-1);
+      color: var(--text-3);
+      height: 100%;
+      width: 4.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: .875rem;
+      cursor: pointer;
+    }
+    &.focused{
+      background-color:var(--bg-3);
+      border: 1.5px solid var(--bg-1);
+      box-shadow: var(--shadow-2);
+
+      .inputFeild{
+          background: var(--bg-3);
+      }    
+  }
+
+  }
+
+

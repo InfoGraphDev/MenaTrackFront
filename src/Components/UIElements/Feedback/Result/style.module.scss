@@ -1,0 +1,59 @@
+.container{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    border-radius: .5rem;
+    background-color: var(--bg-3);
+    max-width: 42rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: var(--shadow-1);
+    .icon{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        animation-name: scaleFadeRotate;
+        animation-duration: 2s; 
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.2, 1, 0.2, 1); 
+    }
+    .title{
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: -1.7rem;
+    }
+    .text{
+      font-size: 1.1rem;
+      margin: -.5rem;
+    }
+}
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.332);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000000000;
+}
+@keyframes scaleFadeRotate {
+    0% {
+      transform: scale(0.85) rotate(-10deg);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05) rotate(5deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  

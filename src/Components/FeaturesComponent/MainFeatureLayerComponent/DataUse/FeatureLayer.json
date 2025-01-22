@@ -1,0 +1,1686 @@
+[
+    {
+        "id": "18f800f29fd-layer-0",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - الطرق الرئيسية",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/13",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 100000,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "labelingInfo": [
+                    {
+                        "name": "Default",
+                        "deconflictionStrategy": "dynamic",
+                        "labelExpression": "[ARABIC_NAME]",
+                        "labelExpressionInfo": {
+                            "expression": "$feature[\"ARABIC_NAME\"]"
+                        },
+                        "labelPlacement": "esriServerLinePlacementAboveAlong",
+                        "labelPosition": "curved",
+                        "maxScale": 0,
+                        "minScale": 50000,
+                        "repeatLabel": false,
+                        "symbol": {
+                            "type": "esriTS",
+                            "color": [
+                                115,
+                                38,
+                                0,
+                                255
+                            ],
+                            "font": {
+                                "family": "Arial",
+                                "size": 9,
+                                "weight": "bold"
+                            },
+                            "horizontalAlignment": "center",
+                            "kerning": true,
+                            "haloColor": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "haloSize": 1,
+                            "rightToLeft": false,
+                            "rotated": false,
+                            "text": "",
+                            "verticalAlignment": "bottom",
+                            "xoffset": 0,
+                            "yoffset": 0,
+                            "angle": 0
+                        },
+                        "useCodedValues": true
+                    }
+                ],
+                "renderer": {
+                    "type": "uniqueValue",
+                    "field1": "HIGHWAY_TYPE",
+                    "defaultLabel": "<all other values>",
+                    "defaultSymbol": {
+                        "type": "esriSLS",
+                        "color": [
+                            255,
+                            85,
+                            0,
+                            255
+                        ],
+                        "width": 3.4,
+                        "style": "esriSLSSolid"
+                    },
+                    "fieldDelimiter": ",",
+                    "uniqueValueGroups": [
+                        {
+                            "heading": "HIGHWAY_TYPE",
+                            "classes": [
+                                {
+                                    "description": "Highway Divided International Roads",
+                                    "label": "Highway Divided International Roads",
+                                    "symbol": {
+                                        "type": "esriSLS",
+                                        "color": [
+                                            255,
+                                            127,
+                                            127,
+                                            255
+                                        ],
+                                        "width": 3,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "1"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "Highway Undivided Roads",
+                                    "label": "Highway Undivided Roads",
+                                    "symbol": {
+                                        "type": "esriSLS",
+                                        "color": [
+                                            255,
+                                            127,
+                                            127,
+                                            255
+                                        ],
+                                        "width": 3,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "2"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "Seconadry Roads",
+                                    "label": "Seconadry Roads",
+                                    "symbol": {
+                                        "type": "esriSLS",
+                                        "color": [
+                                            255,
+                                            127,
+                                            127,
+                                            255
+                                        ],
+                                        "width": 3,
+                                        "style": "esriSLSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "3"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "uniqueValueInfos": [
+                        {
+                            "description": "Highway Divided International Roads",
+                            "label": "Highway Divided International Roads",
+                            "symbol": {
+                                "type": "esriSLS",
+                                "color": [
+                                    255,
+                                    127,
+                                    127,
+                                    255
+                                ],
+                                "width": 3,
+                                "style": "esriSLSSolid"
+                            },
+                            "value": "1"
+                        },
+                        {
+                            "description": "Highway Undivided Roads",
+                            "label": "Highway Undivided Roads",
+                            "symbol": {
+                                "type": "esriSLS",
+                                "color": [
+                                    255,
+                                    127,
+                                    127,
+                                    255
+                                ],
+                                "width": 3,
+                                "style": "esriSLSSolid"
+                            },
+                            "value": "2"
+                        },
+                        {
+                            "description": "Seconadry Roads",
+                            "label": "Seconadry Roads",
+                            "symbol": {
+                                "type": "esriSLS",
+                                "color": [
+                                    255,
+                                    127,
+                                    127,
+                                    255
+                                ],
+                                "width": 3,
+                                "style": "esriSLSSolid"
+                            },
+                            "value": "3"
+                        }
+                    ]
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f29fe-layer-1",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - حدود المناطق السكنية",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/14",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 250000,
+            "maxScale": 1000,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "labelingInfo": [
+                    {
+                        "name": "Default",
+                        "allowOverrun": true,
+                        "labelExpression": "[LOCALITY_ANAME]",
+                        "labelExpressionInfo": {
+                            "expression": "$feature[\"LOCALITY_ANAME\"]"
+                        },
+                        "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                        "labelPosition": "curved",
+                        "repeatLabel": false,
+                        "symbol": {
+                            "type": "esriTS",
+                            "color": [
+                                115,
+                                0,
+                                0,
+                                255
+                            ],
+                            "font": {
+                                "family": "Arial",
+                                "size": 9,
+                                "weight": "bold"
+                            },
+                            "horizontalAlignment": "center",
+                            "kerning": true,
+                            "haloColor": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "haloSize": 1,
+                            "rightToLeft": false,
+                            "rotated": false,
+                            "text": "",
+                            "verticalAlignment": "bottom",
+                            "xoffset": 0,
+                            "yoffset": 0,
+                            "angle": 0
+                        },
+                        "useCodedValues": true
+                    }
+                ],
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                230,
+                                76,
+                                0,
+                                255
+                            ],
+                            "width": 1.2,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f29fe-layer-2",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - City SubDistrict",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/15",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 30000,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "labelingInfo": [
+                    {
+                        "name": "Default",
+                        "allowOverrun": true,
+                        "labelExpression": "[ARABIC_NAME]",
+                        "labelExpressionInfo": {
+                            "expression": "$feature[\"ARABIC_NAME\"]"
+                        },
+                        "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                        "labelPosition": "curved",
+                        "maxScale": 0,
+                        "minScale": 50000,
+                        "repeatLabel": false,
+                        "symbol": {
+                            "type": "esriTS",
+                            "color": [
+                                52,
+                                52,
+                                52,
+                                255
+                            ],
+                            "font": {
+                                "family": "Arial",
+                                "size": 10,
+                                "weight": "bold"
+                            },
+                            "horizontalAlignment": "center",
+                            "kerning": true,
+                            "haloColor": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "haloSize": 1,
+                            "rightToLeft": false,
+                            "rotated": false,
+                            "text": "",
+                            "verticalAlignment": "bottom",
+                            "xoffset": 0,
+                            "yoffset": 0,
+                            "angle": 0
+                        },
+                        "useCodedValues": true
+                    }
+                ],
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                115,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 0.4,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f29ff-layer-3",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - City District",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/16",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 100000,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "labelingInfo": [
+                    {
+                        "name": "Default",
+                        "allowOverrun": true,
+                        "labelExpression": "[ARABIC_NAME]",
+                        "labelExpressionInfo": {
+                            "expression": "$feature[\"ARABIC_NAME\"]"
+                        },
+                        "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                        "labelPosition": "curved",
+                        "maxScale": 0,
+                        "minScale": 250000,
+                        "repeatLabel": false,
+                        "symbol": {
+                            "type": "esriTS",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "font": {
+                                "family": "Arial",
+                                "size": 12,
+                                "weight": "bold"
+                            },
+                            "horizontalAlignment": "center",
+                            "kerning": true,
+                            "haloColor": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "haloSize": 2,
+                            "rightToLeft": false,
+                            "rotated": false,
+                            "text": "",
+                            "verticalAlignment": "bottom",
+                            "xoffset": 0,
+                            "yoffset": 0,
+                            "angle": 0
+                        },
+                        "useCodedValues": true
+                    }
+                ],
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                168,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 1.2,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f29ff-layer-4",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - Jordan Qada",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/17",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 500000,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                0,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 1,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f29ff-layer-5",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - Jordan Liwa",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/18",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 500000,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "labelingInfo": [
+                    {
+                        "name": "Default",
+                        "allowOverrun": true,
+                        "labelExpression": "[ARABIC_NAME]",
+                        "labelExpressionInfo": {
+                            "expression": "$feature[\"ARABIC_NAME\"]"
+                        },
+                        "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                        "labelPosition": "curved",
+                        "repeatLabel": false,
+                        "symbol": {
+                            "type": "esriTS",
+                            "color": [
+                                52,
+                                52,
+                                52,
+                                255
+                            ],
+                            "font": {
+                                "family": "Arial",
+                                "size": 11,
+                                "weight": "bold"
+                            },
+                            "horizontalAlignment": "center",
+                            "kerning": true,
+                            "haloColor": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "haloSize": 1,
+                            "rightToLeft": false,
+                            "rotated": false,
+                            "text": "",
+                            "verticalAlignment": "bottom",
+                            "xoffset": 0,
+                            "yoffset": 0,
+                            "angle": 0
+                        },
+                        "useCodedValues": true
+                    }
+                ],
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                104,
+                                104,
+                                104,
+                                255
+                            ],
+                            "width": 1,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f2a00-layer-6",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - مديريات الصحة",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/19",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 0,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                230,
+                                0,
+                                0,
+                                255
+                            ],
+                            "width": 1,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f2a00-layer-7",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - Jordan Governorates",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/20",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 0,
+            "maxScale": 500000,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "labelingInfo": [
+                    {
+                        "name": "Default",
+                        "allowOverrun": true,
+                        "labelExpression": "[ARABIC_NAME]",
+                        "labelExpressionInfo": {
+                            "expression": "$feature[\"ARABIC_NAME\"]"
+                        },
+                        "labelPlacement": "esriServerPolygonPlacementAlwaysHorizontal",
+                        "labelPosition": "curved",
+                        "repeatLabel": false,
+                        "symbol": {
+                            "type": "esriTS",
+                            "color": [
+                                130,
+                                130,
+                                130,
+                                255
+                            ],
+                            "font": {
+                                "family": "Arial",
+                                "size": 12,
+                                "weight": "bold"
+                            },
+                            "horizontalAlignment": "center",
+                            "kerning": true,
+                            "haloColor": [
+                                255,
+                                255,
+                                255,
+                                255
+                            ],
+                            "haloSize": 1,
+                            "rightToLeft": false,
+                            "rotated": false,
+                            "text": "",
+                            "verticalAlignment": "bottom",
+                            "xoffset": 0,
+                            "yoffset": 0,
+                            "angle": 0
+                        },
+                        "useCodedValues": true
+                    }
+                ],
+                "renderer": {
+                    "authoringInfo": {
+                        "colorRamp": {
+                            "type": "multipart",
+                            "colorRamps": [
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        184,
+                                        223,
+                                        252,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        184,
+                                        223,
+                                        252,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        179,
+                                        252,
+                                        179,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        179,
+                                        252,
+                                        179,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        204,
+                                        182,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        204,
+                                        182,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        179,
+                                        246,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        179,
+                                        246,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        212,
+                                        252,
+                                        234,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        212,
+                                        252,
+                                        234,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        250,
+                                        192,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        250,
+                                        192,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        188,
+                                        179,
+                                        252,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        188,
+                                        179,
+                                        252,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        212,
+                                        240,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        212,
+                                        240,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        218,
+                                        207,
+                                        252,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        218,
+                                        207,
+                                        252,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        238,
+                                        215,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        238,
+                                        215,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        252,
+                                        179,
+                                        190,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        252,
+                                        179,
+                                        190,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        216,
+                                        252,
+                                        204,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        216,
+                                        252,
+                                        204,
+                                        255
+                                    ]
+                                },
+                                {
+                                    "type": "algorithmic",
+                                    "algorithm": "esriCIELabAlgorithm",
+                                    "fromColor": [
+                                        194,
+                                        245,
+                                        252,
+                                        255
+                                    ],
+                                    "toColor": [
+                                        194,
+                                        245,
+                                        252,
+                                        255
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "type": "uniqueValue",
+                    "field1": "GOV_ANAME",
+                    "defaultLabel": "<all other values>",
+                    "defaultSymbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                130,
+                                130,
+                                130,
+                                255
+                            ],
+                            "width": 1.2,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    },
+                    "fieldDelimiter": ",",
+                    "uniqueValueGroups": [
+                        {
+                            "heading": "Gov_AName",
+                            "classes": [
+                                {
+                                    "description": "اربد",
+                                    "label": "اربد",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            190,
+                                            252,
+                                            179,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "اربد"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "البلقاء",
+                                    "label": "البلقاء",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            240,
+                                            215,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "البلقاء"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "الزرقاء",
+                                    "label": "الزرقاء",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            179,
+                                            213,
+                                            252,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "الزرقاء"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "الطفيلة",
+                                    "label": "الطفيلة",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            207,
+                                            192,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "الطفيلة"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "العاصمة",
+                                    "label": "العاصمة",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            182,
+                                            252,
+                                            216,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "العاصمة"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "العقبة",
+                                    "label": "العقبة",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            179,
+                                            217,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "العقبة"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "الكرك",
+                                    "label": "الكرك",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            207,
+                                            224,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "الكرك"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "المفرق",
+                                    "label": "المفرق",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            179,
+                                            183,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "المفرق"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "جرش",
+                                    "label": "جرش",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            247,
+                                            189,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "جرش"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "عجلون",
+                                    "label": "عجلون",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            228,
+                                            199,
+                                            252,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "عجلون"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "مادبا",
+                                    "label": "مادبا",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            252,
+                                            179,
+                                            250,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "مادبا"
+                                        ]
+                                    ]
+                                },
+                                {
+                                    "description": "معان",
+                                    "label": "معان",
+                                    "symbol": {
+                                        "type": "esriSFS",
+                                        "color": [
+                                            204,
+                                            248,
+                                            252,
+                                            255
+                                        ],
+                                        "outline": {
+                                            "type": "esriSLS",
+                                            "color": [
+                                                130,
+                                                130,
+                                                130,
+                                                255
+                                            ],
+                                            "width": 1.2,
+                                            "style": "esriSLSSolid"
+                                        },
+                                        "style": "esriSFSSolid"
+                                    },
+                                    "values": [
+                                        [
+                                            "معان"
+                                        ]
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "uniqueValueInfos": [
+                        {
+                            "description": "اربد",
+                            "label": "اربد",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    190,
+                                    252,
+                                    179,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "اربد"
+                        },
+                        {
+                            "description": "البلقاء",
+                            "label": "البلقاء",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    240,
+                                    215,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "البلقاء"
+                        },
+                        {
+                            "description": "الزرقاء",
+                            "label": "الزرقاء",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    179,
+                                    213,
+                                    252,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "الزرقاء"
+                        },
+                        {
+                            "description": "الطفيلة",
+                            "label": "الطفيلة",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    207,
+                                    192,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "الطفيلة"
+                        },
+                        {
+                            "description": "العاصمة",
+                            "label": "العاصمة",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    182,
+                                    252,
+                                    216,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "العاصمة"
+                        },
+                        {
+                            "description": "العقبة",
+                            "label": "العقبة",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    179,
+                                    217,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "العقبة"
+                        },
+                        {
+                            "description": "الكرك",
+                            "label": "الكرك",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    207,
+                                    224,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "الكرك"
+                        },
+                        {
+                            "description": "المفرق",
+                            "label": "المفرق",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    179,
+                                    183,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "المفرق"
+                        },
+                        {
+                            "description": "جرش",
+                            "label": "جرش",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    247,
+                                    189,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "جرش"
+                        },
+                        {
+                            "description": "عجلون",
+                            "label": "عجلون",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    228,
+                                    199,
+                                    252,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "عجلون"
+                        },
+                        {
+                            "description": "مادبا",
+                            "label": "مادبا",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    252,
+                                    179,
+                                    250,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "مادبا"
+                        },
+                        {
+                            "description": "معان",
+                            "label": "معان",
+                            "symbol": {
+                                "type": "esriSFS",
+                                "color": [
+                                    204,
+                                    248,
+                                    252,
+                                    255
+                                ],
+                                "outline": {
+                                    "type": "esriSLS",
+                                    "color": [
+                                        130,
+                                        130,
+                                        130,
+                                        255
+                                    ],
+                                    "width": 1.2,
+                                    "style": "esriSLSSolid"
+                                },
+                                "style": "esriSFSSolid"
+                            },
+                            "value": "معان"
+                        }
+                    ]
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    },
+    {
+        "id": "18f800f2a00-layer-8",
+        "showLegend": true,
+        "listMode": "show",
+        "disablePopup": false,
+        "title": "NewHealthMap MOH MAIN AR - Jordan Boundaries",
+        "url": "https://gis.moh.gov.jo/arcgis/rest/services/NewHealthMap_MOH_MAIN_AR/FeatureServer/21",
+        "visibility": true,
+        "layerType": "ArcGISFeatureLayer",
+        "refreshInterval": 0,
+        "layerDefinition": {
+            "minScale": 0,
+            "maxScale": 0,
+            "definitionExpression": null,
+            "drawingInfo": {
+                "renderer": {
+                    "type": "simple",
+                    "symbol": {
+                        "type": "esriSFS",
+                        "color": [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        "outline": {
+                            "type": "esriSLS",
+                            "color": [
+                                130,
+                                130,
+                                130,
+                                255
+                            ],
+                            "width": 2,
+                            "style": "esriSLSSolid"
+                        },
+                        "style": "esriSFSSolid"
+                    }
+                }
+            }
+        },
+        "timeAnimation": true,
+        "showLabels": true,
+        "screenSizePerspective": true
+    }
+]

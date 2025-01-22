@@ -1,0 +1,25 @@
+.note{
+    background-color: var(--bg-4);
+    width: 100%;
+    border-radius: .5rem;
+    padding:1rem .5rem;
+    margin-top: .5rem;
+    border:  $sm-border-2;
+    
+    .clickhere{
+        cursor: pointer;
+        color: var(--text-1);
+        text-decoration: underline;
+        margin: 0 .7rem;
+    }
+    .item{
+        display: flex;
+        color: var(--text-4);
+        .icon{
+            font-size: 1.4rem;
+            padding: .1rem .5rem;
+            color: var(--text-2);
+        }
+
+    }
+}

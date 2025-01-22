@@ -1,0 +1,20 @@
+.container{
+    position: relative;
+    background-color: var(--bg-1);
+    font-weight: bold;
+    td{
+        background-color: var(--bg-1);
+        color: var(--text-3);
+        border: none;
+    }
+    .Name{
+        position: absolute;
+        top: .3rem;
+        &.arabic{
+            right: .2rem;
+        }
+        &.english{
+            left: .2rem;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.title {
+  display: flex;
+  margin: 1rem 0;
+  width: 100%;
+  align-items: center;
+  
+  &.look{
+    background-color: rgba(192, 192, 192, 0.085);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow-2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-top: 0rem;
+    .text{
+      color: var(--text-4);
+    }
+    .divider{
+      display: none;
+    }
+  }
+
+  .divider {
+    height: 1px; 
+    flex-grow: 1;
+
+    &.dash {
+      border-bottom: 1.45px dashed var(--text-2); 
+    }
+
+    &.solid {
+      border-bottom: 1.45px solid var(--text-2); 
+    }
+  }
+
+  .text {
+    color: var(--text-1);
+    margin: 0 .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: $sm-font;
+  }
+}

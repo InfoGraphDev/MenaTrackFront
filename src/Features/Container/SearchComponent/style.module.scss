@@ -1,0 +1,26 @@
+.itemSelect ,.itemSelectAr{
+    width: 33rem;
+    background-color: var(--bg-3);
+    padding:1rem 0.5rem;
+    position: fixed;
+    left: -50rem;
+    z-index: $z-30;
+    box-shadow: var(--shadow-1);
+    overflow-y: auto;
+    transition: all .5s;
+    @media (max-width: $break-point) {
+        display: none;
+    }
+    
+    height: calc(100vh);
+    &.active{
+        bottom: 0;
+        left: 0rem;
+    }
+}
+.itemSelectAr{
+    &.active{
+        right: 0rem;
+    }
+    right: -80rem;
+}

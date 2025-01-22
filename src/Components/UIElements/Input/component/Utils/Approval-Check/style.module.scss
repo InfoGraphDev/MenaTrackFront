@@ -1,0 +1,9 @@
+.container{
+    position: absolute;
+    left: 0;
+    bottom: -1.6rem;
+    .text{
+        color:  var(--text-sucsess);
+        font:$sm-font;
+    }
+}

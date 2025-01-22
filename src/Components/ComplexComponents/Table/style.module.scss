@@ -1,0 +1,45 @@
+.table {
+  box-shadow: var(--shadow-1);
+  overflow: auto;
+  width: 100%;
+  border-radius: .5rem;
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--bg-1);
+  }
+
+  .tr {
+    display: flex;
+  }
+
+  .th,
+  .td {
+    flex: 1;
+    padding: .55rem;
+    text-align: center;
+    border-left: .6px  solid rgba(255, 255, 255, 0.178);
+    border-right: .6px  solid rgba(255, 255, 255, 0.178);
+    border-collapse: collapse;
+    &.activWidth{
+      min-width: 18rem;
+    }
+  }
+  .th{
+    background-color: var(--bg-1);
+    color: var(--text-3);
+    font-weight: bold;
+  }
+  .td{
+    font-size: .95rem;
+  }
+  .body .tr:nth-child(even) {
+    background-color: rgba(192, 192, 192, 0.103);
+  }
+}
+
+
+.containerButton{
+  min-height: 30rem;
+}

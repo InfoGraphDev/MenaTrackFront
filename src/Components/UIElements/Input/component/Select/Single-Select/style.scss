@@ -1,0 +1,104 @@
+.react-select {
+  z-index: 1000 !important;
+  &__control {
+    height: 2.8rem !important; 
+    min-height: 2.8rem !important;
+    border-radius: .5rem !important;
+    border: $md-border-3 !important;
+    padding: 0 .4rem !important; 
+    background-color: var(--bg-3) !important;
+    &--is-focused {
+      box-shadow: none !important;
+      background-color: var(--bg-3)!important;
+      border: $md-border-1 !important;
+    }
+
+    &--is-disabled {
+      background-color: var(--bg-disable) !important; 
+      color: var(--text-disable) !important;
+      cursor: none !important;
+    }
+    .react-select__single-value{
+      color: var(--text-1);
+    }
+  }
+  &__menu {
+    background-color: var(--bg-3) !important;
+    border: none !important;
+    box-shadow: none !important; 
+    z-index: 1000 !important;
+  }
+
+  &__menu-list {
+      padding: 0 !important; 
+      background-color: var(--bg-3) !important;
+      border-radius: 0.5rem !important; 
+  }
+  &__option {
+    background-color: var(--bg-3) !important;
+    color: var(--text-4) !important;
+    font-size: .875rem !important;
+    margin: 0 !important;
+    padding: .5rem !important;
+
+    &--is-selected {
+      cursor: pointer !important;
+      background-color: var(--bg-2);
+    }
+    &--is-focused{
+      font-size: .9rem !important;
+      cursor: pointer !important;
+      background-color: rgba(192, 192, 192, 0.349) !important;
+      color: var(--text-1) !important;
+    }
+    &--is-selected {
+      color: silver !important;
+      font-weight: bold !important;
+    }
+  }
+
+  &__single-value {
+    font: $sm-font !important; 
+    font-weight: 500 !important;
+    text-align: left !important;
+  }
+
+  &__menu {
+    font: $sm-font !important;
+  }
+}
+
+.react-select-container {
+  margin-bottom: .5rem;
+  z-index: 1000 !important;
+}
+
+.react-select-label {
+  font: $lg-font;
+  padding: .3rem;
+}
+
+
+
+.react-select-container{
+  &.arabic{
+    .react-select{
+      &__single-value {
+        font: $sm-font !important; 
+        font-weight: 500 !important;
+        text-align: right !important;
+      }  
+    }   
+  }
+}
+
+
+@media (max-width: $break-point) {
+  .react-select {
+    &__control {
+      height: 4rem !important; 
+      min-height: 4rem !important;
+    }
+  }
+}  
+

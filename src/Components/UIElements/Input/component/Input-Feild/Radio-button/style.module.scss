@@ -1,0 +1,21 @@
+@import "../../../style/style.module.scss";
+  .containerField{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    .radioOption{
+      font-weight: bold;
+      align-items: center;
+      display: flex;
+      gap: .3rem;
+      flex-wrap: nowrap;
+      text-wrap: nowrap;
+    }
+    input{
+      width: 100%;
+    }
+  }
+
+

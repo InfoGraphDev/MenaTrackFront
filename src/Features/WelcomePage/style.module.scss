@@ -1,0 +1,26 @@
+.welcome{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000000000000000000000000;
+    .icon{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .image{
+        filter: blur(5px); 
+        opacity: 0.5; 
+        height: 100vh;
+        width: 100vw;
+    }
+    .LoadingImage{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 13rem;
+        height: 13rem;
+    }
+}

@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+}
+.searcMain{
+  @media (max-width: $break-point) {
+    display: none;
+}
+}
+.iconStyle{
+  color: var(--text-4);
+  margin-top: 1rem;
+}

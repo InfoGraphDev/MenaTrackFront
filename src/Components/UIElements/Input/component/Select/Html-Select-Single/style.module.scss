@@ -1,0 +1,14 @@
+@import "../../../style/style.module";
+  .containerField{
+    padding: 0;
+    width: 100%;
+    font-size: .95rem;
+    @extend %containerFeild;
+    .inputFeild{
+      width: 100%;
+      padding: 0rem .2rem;
+    }
+  }
+
+
+

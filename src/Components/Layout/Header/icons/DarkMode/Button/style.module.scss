@@ -1,0 +1,65 @@
+$transition:1.5s;
+.container{
+    cursor: pointer;
+    input{
+        position: absolute;
+        opacity: 0;
+    }
+    .moon{
+        font-size: 1.6rem;
+        color: var(--text-4);
+        @media (max-width: $break-point) {
+            font-size: 1rem;
+        }
+        position: absolute;
+        transition: all $transition;
+        &.larg{
+            font-size: 7rem;
+        }
+        transform: rotate(0deg) scale(1);
+    }
+    
+    .sun{
+        font-size: 1.6rem;
+        @media (max-width: $break-point) {
+            font-size: 1rem;
+        }
+        color: #666;
+        filter: drop-shadow(0 0 2px rgba(0,0,0,.5));
+        transition: all $transition;
+        transform: rotate(0) scale(0);
+        &.larg{
+            font-size: 7rem;
+        }
+    }
+
+    input:checked~.moon{
+        transition-delay: .8s;
+        transform: rotate(360deg) scale(0);
+        transition: all $transition;
+    }
+    input:checked~.sun{
+        transition-delay: .8s;
+        transform: rotate(360deg) scale(1);
+    }
+        
+    .toggel{
+        position: absolute;
+        display: block;
+        width: 2.3rem;
+        height: 2.3rem;
+        @media (max-width: $break-point) {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        border-radius: .5rem;
+        z-index: -1;
+        transition: $transition;
+        &.larg{
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+        }
+    }
+    
+}

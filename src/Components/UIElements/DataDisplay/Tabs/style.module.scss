@@ -1,0 +1,75 @@
+@keyframes selectAnimation {
+    from {
+        opacity: 0;
+        background-color: var(--bg-3); 
+    }
+    to {
+        opacity: 1;
+        background-color: var(--bg-1); 
+        color: var(--text-3);
+    }
+}
+
+@keyframes deselectAnimation {
+    from {
+        transform: scale(1);
+        background-color: var(--bg-1);
+    }
+    to {
+        transform: scale(1);
+        background-color: var(--bg-3);
+    }
+}
+
+.container{
+    padding: 0.3rem;
+    border-radius: .5rem;
+    background: var(--bg-8);
+    box-shadow: 0px 0px 1px 1px 2px var(--bg-2);
+    width: 100%;
+
+    .icon{
+        width: .8rem !important;
+        height: 1.5rem !important;
+        color: var(--text-2);
+        margin: 0rem .5rem;
+    }
+
+    .text{
+        font-size: .875rem;
+        font-weight: bold;
+    }
+
+    .ContainerSelectOne{
+        display: flex;
+        gap: .25rem;
+        width: 100%;
+
+        .selectOne{
+            padding: .45rem;
+            width: 100%;
+            border-radius: .3rem;
+            background: var(--bg-3);
+            box-shadow: var(--shadow-1);
+            font: $xl-font;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease; 
+
+            &.first{
+                border-radius: .3rem;
+            }
+
+            &.last{
+                border-radius: 0.3rem ;
+            }
+
+            &.Active{
+                animation: selectAnimation 0.1s forwards; 
+            }
+
+            &:not(.Active){
+                animation: deselectAnimation 0s forwards;
+            }
+        }    
+    }
+}

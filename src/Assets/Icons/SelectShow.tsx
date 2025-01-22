@@ -1,0 +1,16 @@
+import React from 'react'
+
+interface Type{
+    className?:string
+}
+function SelectShowSvg({className}:Type) {
+  return (
+    <svg className={className} width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 22C3.45 22 2.97933 21.8043 2.588 21.413C2.19667 21.0217 2.00067 20.5507 2 20V11C2 10.45 2.196 9.97933 2.588 9.588C2.98 9.19667 3.45067 9.00067 4 9H6V4C6 3.45 6.196 2.97933 6.588 2.588C6.98 2.19667 7.45067 2.00067 8 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V13C22 13.55 21.8043 14.021 21.413 14.413C21.0217 14.805 20.5507 15.0007 20 15H18V20C18 20.55 17.8043 21.021 17.413 21.413C17.0217 21.805 16.5507 22.0007 16 22H4ZM4 20H16V13H4V20ZM18 13H20V6H8V9H16C16.55 9 17.021 9.196 17.413 9.588C17.805 9.98 18.0007 10.4507 18 11V13Z" fill="currentColor"/>
+    </svg>
+    )
+}
+
+export default SelectShowSvg;
+
+

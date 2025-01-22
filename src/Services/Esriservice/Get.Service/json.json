@@ -1,0 +1,211 @@
+{"layers":[
+    {
+     "id": 0,
+     "name": "Hospitals",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 1,
+     "name": "Health_Centers",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 2,
+     "name": "Accredited_Centers",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 3,
+     "name": "MOH_Stores",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 4,
+     "name": "Health_Directorates",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 64,
+     "name": "MOH_Directorates_Offices",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 65,
+     "name": "Pulmonology_Centers",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 67,
+     "name": "Diseases_Offices",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 69,
+     "name": "Jordan_Roads",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 100000,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolyline"
+    },
+    {
+     "id": 70,
+     "name": "Internal_Streets",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 10000,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolyline"
+    },
+    {
+     "id": 71,
+     "name": "Pharmacies",
+     "parentLayerId": -1,
+     "defaultVisibility": false,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 72,
+     "name": "Jordan_Landmarks",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 5000,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPoint"
+    },
+    {
+     "id": 73,
+     "name": "District",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 500000,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 74,
+     "name": "SubDistrict",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 500000,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 77,
+     "name": "Localities",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 250000,
+     "maxScale": 1000,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 78,
+     "name": "Jordan_Boundaries",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 79,
+     "name": "Jordan_Governorates",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 500000,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 80,
+     "name": "Water_Bodies",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    },
+    {
+     "id": 81,
+     "name": "Palestine_Border",
+     "parentLayerId": -1,
+     "defaultVisibility": true,
+     "subLayerIds": null,
+     "minScale": 0,
+     "maxScale": 0,
+     "type": "Feature Layer",
+     "geometryType": "esriGeometryPolygon"
+    }
+   ] }

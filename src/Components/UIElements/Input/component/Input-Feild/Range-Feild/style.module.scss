@@ -1,0 +1,28 @@
+.containerRange {
+  position: relative;
+  margin-bottom: 1.25rem;
+
+  .label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+          &:first-child {
+              color: var(--text-1);
+              font: $md-font; 
+          }
+
+          &:last-child {
+              color: var(--text-1);
+              text-align: right;
+              font: $md-font; 
+            }
+      }
+  }
+
+  .range {
+      width: 100%;
+      cursor: pointer;
+  }
+}

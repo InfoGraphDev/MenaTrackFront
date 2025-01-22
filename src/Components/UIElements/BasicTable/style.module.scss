@@ -1,0 +1,26 @@
+.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    th, td {
+        border: $md-border-3;
+        padding: .4rem;
+        text-align: center;
+        width: 25%;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    th {
+        background-color: var(--bg-1);
+        text-align: center;
+        color: var(--text-3);
+        border-bottom: 1px solid var(--bg-2);
+    }
+
+}

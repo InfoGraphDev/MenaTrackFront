@@ -1,0 +1,88 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000000000000000000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-3);
+  }
+  .book {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: var(--shadow-1);
+    border-radius: 10px;
+    overflow: hidden;
+    perspective: 1000px;
+    background-color: var(--bg-3);
+  
+    @media screen and (max-width: $break-point) {
+      flex-direction: column;
+      margin-top: 5vh;
+      width: 90%;
+    }
+  }
+  
+  .pageLeft, .pageRight {
+    flex: 1;
+    padding: 2rem;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  
+    @media screen and (max-width: $break-point) {
+      padding: 1rem;
+    }
+  }
+  
+  .pageLeft {
+    background-color: var(--bg-3);
+    padding-left: 3rem;
+  
+    h1 {
+      color: var(--text-1);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+  
+      @media screen and (max-width: $break-point) {
+        font-size: 2rem;
+      }
+  
+      @media screen and (max-width: $break-point) {
+        font-size: 1.5rem;
+      }
+    }
+  
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+  
+      @media screen and (max-width: $break-point) {
+        font-size: 1rem;
+      }
+  
+      @media screen and (max-width: $break-point) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  
+  .pageRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3f1e1;
+  
+    .image {
+      max-width: 90%;
+      border-radius: 8px;
+  
+      @media screen and (max-width: $break-point) {
+        max-width: 100%;
+      }
+    }
+  }
+  

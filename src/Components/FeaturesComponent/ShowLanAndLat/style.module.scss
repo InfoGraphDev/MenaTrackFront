@@ -1,0 +1,13 @@
+.container{
+    position: fixed;
+    bottom: .5rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    color: var(--text-4);
+    border-radius: .5rem;
+    box-shadow: var(--shadow-1);
+    height: 4.8rem;
+    .item{
+        margin-bottom: .5rem;
+    }
+}

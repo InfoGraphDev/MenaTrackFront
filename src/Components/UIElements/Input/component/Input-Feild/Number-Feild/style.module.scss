@@ -1,0 +1,12 @@
+@import "../../../style/style.module.scss";
+
+  .containerField{
+    position: relative;
+    @extend %containerFeild;
+    width: 100%;
+    input{
+      width: 100%;
+    }
+  }
+
+

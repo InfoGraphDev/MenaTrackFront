@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    padding: .7rem;
+    gap: .3rem;
+    color: #3F4753;
+    z-index: 10000000000000000000000000000000000000000;
+    .icon{
+        margin-bottom: auto;
+        &.arabic{
+            margin-left: .3rem;
+        }
+        &.english{
+            margin-right: .3rem;
+        }
+    }
+    .title{
+        font-weight: bold;
+        font-size: .9rem;
+        margin-bottom: .3rem;
+    }
+    .message{
+        font-size: .875rem;
+    }
+    .close{
+        transition: all .5s;
+        margin-bottom: auto;
+        color: var(--text-4);
+        &:hover{
+            color: black;
+            transform: scale(1.1);
+        }
+        &.active{
+            margin-bottom: auto;
+        }
+    }
+}

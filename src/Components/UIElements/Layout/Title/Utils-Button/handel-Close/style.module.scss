@@ -1,0 +1,12 @@
+.container{
+    font-size: 1.6rem;
+    &:hover{
+        transition: all .5s;
+        color: $color-Error;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+.icon{
+    color: var(--text-4);
+}

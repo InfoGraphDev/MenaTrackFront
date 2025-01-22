@@ -1,0 +1,9 @@
+.container{
+    font-size: 1.4rem;
+    cursor: pointer;
+    &:hover{
+        transition: all .5s;
+        color: var(--text-1);
+        transform: scale(1.1);
+    }
+}

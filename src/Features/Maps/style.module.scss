@@ -1,0 +1,11 @@
+.containerMap{
+    width: calc(100vw );
+    position: absolute;
+    left: 4.5;
+    top: 0;
+    touch-action: none;
+    .selectArea{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

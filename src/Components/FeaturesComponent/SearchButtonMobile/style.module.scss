@@ -1,0 +1,13 @@
+.buttonSearch{
+    position: fixed;
+    top: 5rem;   
+    background-color: var(--bg-1);
+    color: var(--text-3);
+    padding: .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+    @media (max-width: $break-point) {
+        display: block;
+    }      
+}

@@ -1,0 +1,11 @@
+.container{
+  @extend %PagesContainer;
+  width: 90vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: auto;
+  border-radius: 1rem;
+  padding: 2.5rem 3rem;
+
+}

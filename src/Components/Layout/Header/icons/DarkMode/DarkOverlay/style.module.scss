@@ -1,0 +1,36 @@
+@keyframes reveal {
+    from {
+      clipPath: circle(20% at 50% 50%);
+    }
+    to {
+      clipPath: circle(150% at 50% 50%);
+    }
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    clipPath: circle(20% at 50% 50%);
+    transition: background-color 5s ease;
+    z-index: 100000000;
+  }
+  
+  .dark, .light {
+    animation: reveal 1.5s ease forwards;
+  }
+  
+  .dark {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .light {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  

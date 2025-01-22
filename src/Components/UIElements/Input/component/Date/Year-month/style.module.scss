@@ -1,0 +1,82 @@
+.yearMonthPicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s;
+    background-color: var(--bg-3);
+    padding: 1rem;
+    box-shadow: var(--shadow-1);
+    border-radius: .5rem;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    &.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  }
+  
+  .header {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    margin-top: -.3rem;
+    .icon{
+      font-size: 1.3rem;
+    }
+  }
+  
+  .icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+    
+  .monthList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .monthItem {
+    background-color: var(--bg-3);
+    border: 1px solid #d4d4d4;
+    padding: .3rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border-radius: .3rem;
+    font-size: .875rem;
+
+    &.activeMonth{
+      background-color:var(--bg-1);
+      color: var(--text-3);
+    }
+  
+    &:hover {
+      background-color: var(--bg-2);
+      color: var(--text-3);
+
+    }
+  }
+  
+
+
+  .containerAll{
+    position: relative
+  }
+  .containerInput{
+    @extend %containerFeild;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    cursor: pointer;
+
+    &.active{
+      background-color:var(--bg-3);
+      border: 1.5px solid var(--bg-1);
+      box-shadow: var(--shadow-2);
+  }
+  }

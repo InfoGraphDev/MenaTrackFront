@@ -1,0 +1,20 @@
+.coordenate-measurement-tool{
+    margin-top: 2rem;
+}
+.esri-coordinate-conversion {
+    &.esri-widget{
+        background-color: rgba(192, 192, 192, 0.11);
+        border-radius: 5px;
+        padding: .2rem;
+        color: var(--text-4);
+        box-shadow:var(--shadow-2);    
+        width: 100% !important;
+        margin-top: 0rem !important;
+
+        .esri-select{
+            width: 100% !important;
+            @extend %containerFeild;
+            margin-bottom: 0rem;
+        }
+    }
+}

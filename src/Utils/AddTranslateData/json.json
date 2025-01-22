@@ -1,0 +1,262 @@
+{
+    "objectid": {
+        "arabic": "رقم الكائن",
+        "english": "Object ID"
+    },
+    "wplace": {
+        "arabic": "مكان العمل",
+        "english": "Workplace"
+    },
+    "municipalityCode": {
+        "arabic": "رمز البلدية",
+        "english": "Municipality Code"
+    },
+    "govCode": {
+        "arabic": "رمز المحافظة",
+        "english": "Governorate Code"
+    },
+    "districtCode": {
+        "arabic": "رمز المنطقة",
+        "english": "District Code"
+    },
+    "centerTypeCode": {
+        "arabic": "رمز نوع المركز",
+        "english": "Center Type Code"
+    },
+    "subDistrictCode": {
+        "arabic": "رمز الحي",
+        "english": "Sub District Code"
+    },
+    "healthDirCode": {
+        "arabic": "رمز المديرية الصحية",
+        "english": "Health Directorate Code"
+    },
+    "arabicName": {
+      "arabic": "الاسم العربي",
+      "english": "Arabic Name"
+    },
+    "englishName": {
+      "arabic": "الاسم الإنجليزي",
+      "english": "English Name"
+    },
+    "admission": {
+      "arabic": "القبول",
+      "english": "Admissions"
+    },
+    "lifeDischarged": {
+      "arabic": "خروج على قيد الحياة",
+      "english": "Discharged Alive"
+    },
+    "deathDischarged": {
+      "arabic": "خروج متوفى",
+      "english": "Discharged Deceased"
+    },
+    "outPatient": {
+      "arabic": "المرضى الخارجيين",
+      "english": "Outpatients"
+    },
+    "surgicalOperation": {
+      "arabic": "العمليات الجراحية",
+      "english": "Surgical Operations"
+    },
+    "patientDays": {
+      "arabic": "أيام تنويم المرضى",
+      "english": "Patient Days"
+    },
+    "prevRounded": {
+      "arabic": "السابق مستدير",
+      "english": "Previous Rounded"
+    },
+    "nextRounded": {
+      "arabic": "التالي مستدير",
+      "english": "Next Rounded"
+    },
+    "insured": {
+      "arabic": "مؤمن عليهم",
+      "english": "Insured"
+    },
+    "dependant": {
+      "arabic": "المعالون",
+      "english": "Dependants"
+    },
+    "ableToPay": {
+      "arabic": "قادر على الدفع",
+      "english": "Able to Pay"
+    },
+    "poor": {
+      "arabic": "الفقراء",
+      "english": "Poor"
+    },
+    "hosBed": {
+      "arabic": "سرير مشفى",
+      "english": "Hospital Beds"
+    },
+    "secBed": {
+      "arabic": "سرير ثانوي",
+      "english": "Secondary Beds"
+    },
+    "admissionTotal": {
+      "arabic": "إجمالي القبول",
+      "english": "Total Admissions"
+    },
+    "deathDischargedTotal": {
+      "arabic": "إجمالي المتوفين بعد الخروج",
+      "english": "Total Discharged Deceased"
+    },
+    "lifeDischargedTotal": {
+      "arabic": "إجمالي الخروج على قيد الحياة",
+      "english": "Total Discharged Alive"
+    },
+    "surgicalOperationTotal": {
+      "arabic": "إجمالي العمليات الجراحية",
+      "english": "Total Surgical Operations"
+    },
+    "outPatientTotal": {
+      "arabic": "إجمالي المرضى الخارجيين",
+      "english": "Total Outpatients"
+    },
+    "patientDaysTotal": {
+      "arabic": "إجمالي أيام تنويم المرضى",
+      "english": "Total Patient Days"
+    },
+    "nextRoundedTotal": {
+      "arabic": "إجمالي التالي مستدير",
+      "english": "Total Next Rounded"
+    },
+    "prevRoundedTotal": {
+      "arabic": "إجمالي السابق مستدير",
+      "english": "Total Previous Rounded"
+    },
+    "totalMajorSurgeries": {
+      "arabic": "إجمالي العمليات الجراحية الكبرى",
+      "english": "Total Major Surgeries"
+    },
+    "totalMedSurgeries": {
+      "arabic": "إجمالي العمليات الجراحية المتوسطة",
+      "english": "Total Medium Surgeries"
+    },
+    "totalMinSurgeries": {
+      "arabic": "إجمالي العمليات الجراحية الصغرى",
+      "english": "Total Minor Surgeries"
+    },
+    "NumberBeds": {
+      "arabic": "عدد الأسرة",
+      "english": "Number of Beds"
+    },
+    "Admissions": {
+      "arabic": "القبولات",
+      "english": "Admissions"
+    },
+    "PatientsDischarges": {
+      "arabic": "خروج المرضى",
+      "english": "Patients Discharges"
+    },
+    "OutPatients": {
+      "arabic": "المرضى الخارجيين",
+      "english": "Outpatients"
+    },
+    "SurgicalOperations": {
+      "arabic": "العمليات الجراحية",
+      "english": "Surgical Operations"
+    },
+    "PatientDays": {
+      "arabic": "أيام تنويم المرضى",
+      "english": "Patient Days"
+    },
+    "RoundingTotals": {
+      "arabic": "إجماليات التقريب",
+      "english": "Rounding Totals"
+    },
+    "SurgeryDetails": {
+      "arabic": "تفاصيل الجراحة",
+      "english": "Surgery Details"
+    },
+    "parasiticandInfectiousDiseases": {
+        "arabic": "الأمراض الطفيلية والمعدية",
+        "english": "Parasitic and Infectious Diseases"
+      },
+      "tumors": {
+        "arabic": "الأورام",
+        "english": "Tumors"
+      },
+      "endocrineNutritionalandMetabolicDisorders": {
+        "arabic": "اضطرابات الغدد الصم والتغذية والأيض",
+        "english": "Endocrine, Nutritional, and Metabolic Disorders"
+      },
+      "diseasesOfTheBloodConstituentOrgansAndImmuneDisorders": {
+        "arabic": "أمراض الدم وأعضائه واضطرابات المناعة",
+        "english": "Diseases of the Blood, Constituent Organs, and Immune Disorders"
+      },
+      "behavioralAndMentalDisorders": {
+        "arabic": "الاضطرابات السلوكية والنفسية",
+        "english": "Behavioral and Mental Disorders"
+      },
+      "nervousSystemDiseases": {
+        "arabic": "أمراض الجهاز العصبي",
+        "english": "Nervous System Diseases"
+      },
+      "circulatorySystemDiseases": {
+        "arabic": "أمراض الجهاز الدوري",
+        "english": "Circulatory System Diseases"
+      },
+      "respiratorySystemDiseases": {
+        "arabic": "أمراض الجهاز التنفسي",
+        "english": "Respiratory System Diseases"
+      },
+      "gastrointestinalDiseases": {
+        "arabic": "أمراض الجهاز الهضمي",
+        "english": "Gastrointestinal Diseases"
+      },
+      "urinaryandReproductiveDiseases": {
+        "arabic": "أمراض الجهاز البولي والتناسلي",
+        "english": "Urinary and Reproductive Diseases"
+      },
+      "pregnancyChildbirthandPostpartum": {
+        "arabic": "الحمل والولادة وما بعد الولادة",
+        "english": "Pregnancy, Childbirth, and Postpartum"
+      },
+      "skinandSubcutaneousTissueDiseases": {
+        "arabic": "أمراض الجلد والنسيج تحت الجلد",
+        "english": "Skin and Subcutaneous Tissue Diseases"
+      },
+      "diseasesofTheSkeletalandMuscularSystemAndConductiveTissues": {
+        "arabic": "أمراض الجهاز الهيكلي والعضلي والأنسجة الوصلية",
+        "english": "Diseases of the Skeletal and Muscular System and Connective Tissues"
+      },
+      "birthMalformationsandChromosomalAbnormalities": {
+        "arabic": "تشوهات الولادة والشذوذ الصبغي",
+        "english": "Birth Malformations and Chromosomal Abnormalities"
+      },
+      "specialCasesStartingInThePerinatalPeriod": {
+        "arabic": "حالات خاصة تبدأ في الفترة المحيطة بالولادة",
+        "english": "Special Cases Starting in the Perinatal Period"
+      },
+      "symptomsSignsLaboratoryandClinicalFindingsNotclassifiedelsewhere": {
+        "arabic": "أعراض وعلامات ونتائج مخبرية وسريرية لم تصنف في مكان آخر",
+        "english": "Symptoms, Signs, Laboratory, and Clinical Findings Not Classified Elsewhere"
+      },
+      "intoxicationandOtherFindingsEspeciallyExternalAmoebae": {
+        "arabic": "التسمم والنتائج الأخرى خاصة الأميبا الخارجية",
+        "english": "Intoxication and Other Findings, Especially External Amoebae"
+      },
+      "lessThanOneYearVisitors": {
+        "arabic": "زوار أقل من سنة",
+        "english": "Less Than One Year Visitors"
+      },
+      "from1to4YearsVisitors": {
+        "arabic": "زوار من 1 إلى 4 سنوات",
+        "english": "From 1 to 4 Years Visitors"
+      },
+      "from5To14YearsVisitors": {
+        "arabic": "زوار من 5 إلى 14 سنة",
+        "english": "From 5 to 14 Years Visitors"
+      },
+      "from15To44YearsVisitors": {
+        "arabic": "زوار من 15 إلى 44 سنة",
+        "english": "From 15 to 44 Years Visitors"
+      },
+      "plus45YearsVisitors": {
+        "arabic": "زوار 45 سنة فأكثر",
+        "english": "45 Years and Older Visitors"
+      }
+}

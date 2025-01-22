@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    position: absolute;
+
+    svg{
+        margin-top: -.1rem;
+    }
+    .text{
+        color:var(--text-error);
+        font-size: .875rem;
+    }
+    &.english{
+        left: 0;
+        bottom: -1.25rem;    
+    }
+    &.araibc{
+        right: 0;
+        bottom: -1.25rem;    
+    }
+}

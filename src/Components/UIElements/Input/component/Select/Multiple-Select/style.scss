@@ -1,0 +1,94 @@
+.container-multi-select-react-component{
+    width: 100%;
+    .containerAll{
+        border: $md-border-3;
+        border-radius: 0.5rem;
+        position: relative;
+        &.containerNotFocuse{
+            border: $md-border-3;
+            border-radius: 0.5rem;
+            background: var(--bg-3);
+        }
+    }
+}
+
+.react-select-multi-select {
+    &__control {
+      border-radius: .5rem !important;
+      background-color: var(--bg-3) !important;
+      border: $md-border-3 !important;
+      padding: 0 .4rem !important; 
+  
+      &--is-focused {
+        box-shadow: none !important;
+        background-color: var(--bg-3) !important;
+        border: $md-border-1 !important;
+      }
+  
+      &--is-disabled {
+        background-color: var(--bg-8) !important;
+        color: var(--text-4) !important;
+        cursor: none !important;
+      }
+      .react-select__single-value{
+        color: var(--text-2);
+      }
+  
+    }
+    &__menu {
+      background-color: var(--bg-3) !important;
+      border: none !important;
+      box-shadow: none !important; 
+    }
+
+    &__menu-list {
+        padding: 0 !important; 
+        background-color: var(--bg-3) !important;
+        border-radius: 0.5rem !important; 
+    }
+    &__option {
+      background-color: var(--bg-3) !important;
+
+      color: var(--text-4) !important;
+      font-size: .875rem !important;
+      margin: 0 !important;
+      padding: .4rem !important;  
+      &--is-selected {
+        cursor: pointer !important;
+        background-color: var(--text-2);
+      }
+      &--is-focused{
+        font-size: .9rem !important;
+        cursor: pointer !important;
+        background-color: rgba(192, 192, 192, 0.432) !important;
+        color: var(--text-2) !important;
+        font-weight: bold;
+      }
+        &--is-selected {
+        color: var(--text-2) !important;
+        font-weight: bold !important;
+        font-size: 1.1rem !important;
+      }
+    }
+  
+    &__single-value {
+      font: $sm-font !important; 
+      font-weight: 500 !important;
+      text-align: left !important;
+    }
+  
+    &__menu {
+      font: $sm-font !important;
+    }
+  }
+  
+  .react-select-container {
+    margin-bottom: .5rem;
+  }
+  
+  .react-select-label {
+    font: $lg-font;
+    padding: .3rem;
+  }
+
+  

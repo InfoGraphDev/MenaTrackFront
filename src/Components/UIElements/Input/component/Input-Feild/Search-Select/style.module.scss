@@ -1,0 +1,54 @@
+@import "../../../style/style.module";
+  .containerField{
+    @extend %containerFeild;
+    
+  }
+
+  .DropDown {
+    @extend %dropDown;
+    width: 100%;
+    left: 0;
+    top: 5rem;
+    padding: 0;
+    color: var(--text-1);
+    transition: max-height 0.5s ease-in-out;
+
+    .inner{
+      max-height: 12rem;
+      overflow-y: auto;
+    }
+    .options {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: var(--text-4);
+        &:hover{
+          color: var(--text-2);
+          background-color: var(--bg-4);
+        }
+    }
+
+    .loadMore{
+      gap: .4rem;
+      padding: .5rem;
+      background-color:  var(--bg-4);
+      cursor: pointer;
+      font:$sm-font;
+      color: var(--text-4);
+    }
+
+    .SearchPlease{
+      height: 100%;
+      height: 8rem;
+      color: var(--text-4);
+    }
+}
+
+
+.ContainerLoading{
+  padding: 1rem 1rem;
+}
+
+.containerAll{
+  width: 100%;
+}

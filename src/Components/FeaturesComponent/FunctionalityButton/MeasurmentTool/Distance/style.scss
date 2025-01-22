@@ -1,0 +1,37 @@
+.esri-distance-measurement-2d.esri-widget.esri-widget--panel {
+    width: 98% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 1rem !important;
+    height: 100% !important;
+}
+
+.esri-distance-measurement-2d__clear-button {
+    background-color:var(--bg-1);
+    color: var(--text-3) !important;
+    padding: .2rem !important;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 100%;
+    background-color:var(--bg-1)!important;
+}
+
+
+.esri-measurement-widget-content__measurement-item__value {
+    font-size: 1rem;
+    color:var(--text-1);
+    font-weight: bold;
+    padding: 1rem 0;
+    margin: 0rem 1rem;
+    margin-bottom: 1rem;
+}
+.esri-measurement-widget-content__measurement-item{
+    margin-bottom: 1rem;
+}
+
+.esri-select{
+    &.esri-coordinate-conversion__select-row{
+        width: 100% !important;
+    }
+}

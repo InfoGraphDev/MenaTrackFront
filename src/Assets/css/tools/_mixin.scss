@@ -1,0 +1,26 @@
+@mixin nice-scroll(
+  $width: $scrollbar-width,
+  $height: $scrollbar-height,
+  $background: $track-background,
+  $border-radius: $track-border-radius,
+  $thumb-background: $thumb-background,
+  $thumb-border-radius: $thumb-border-radius
+) {
+  /* width */
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $height;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $background;
+    border-radius: $border-radius;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-background;
+    border-radius: $thumb-border-radius;
+  }
+}

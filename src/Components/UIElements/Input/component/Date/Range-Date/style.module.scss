@@ -1,0 +1,28 @@
+.container{
+  .containerDate{
+    gap: .25rem;
+    align-self: stretch;
+    padding: 0rem .5rem;
+    border-radius: 0.5rem;
+    border: $md-border-3;
+    background:var(--bg-3);
+    height: 2.9rem;   
+
+    &.focusElement{
+        border-radius: 0.5rem;
+        border: $md-border-2;
+        background: var(--bg-3);
+        .inputField{
+          background-color: var(--bg-3)
+        }
+      }
+  
+
+    .flatPicker{
+        flex-grow: 1;
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+}
+}

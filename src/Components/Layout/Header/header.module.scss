@@ -1,0 +1,54 @@
+.header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-3);
+    padding: 0.7rem 0rem;
+    height: 4.2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: $z-10;
+    background-repeat: no-repeat; 
+    background-size: auto;
+    background-position: center; 
+    width: 100%;
+    @media (max-width: $break-point) {
+      .title {
+        font-size: .8rem;
+        width: 10rem;
+      }
+    }  
+  }
+
+  .title{
+    color: var(--text-1);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .description{
+    font-weight: .8rem;
+    font-weight: bold;
+  }
+  
+  .logoContainer {  
+    .logo {
+      cursor: pointer !important;
+      width: 4rem;
+      height: 4rem;
+      @media (max-width: $break-point) {
+        background-color: var(--bg-3);
+      }    
+      img{
+        height: 2.6rem;
+      }
+    }
+  
+    h1 {
+      color: var(--text-2);
+      cursor: pointer;
+    }
+  
+    
+  }

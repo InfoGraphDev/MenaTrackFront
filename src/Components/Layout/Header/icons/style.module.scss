@@ -1,0 +1,26 @@
+.profile{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+    text-align: center;
+    color: #9FA3A9;
+    font-size: 1.3rem;
+
+    span{
+        cursor: pointer;
+    }
+    .divider{
+        @extend %divider;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.svg{
+    color: var(--text-4);
+}

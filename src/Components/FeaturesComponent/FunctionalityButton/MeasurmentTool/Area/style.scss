@@ -1,0 +1,37 @@
+
+.esri-area-measurement-2d.esri-widget.esri-widget--panel {
+    color: #333 !important;
+    width: 98% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 100% !important;
+}
+
+.esri-unit-select__label{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+.esri-area-measurement-2d__clear-button {
+    background-color: var(--bg-1);
+    color: var(--text-3) !important;
+    padding: .2rem !important;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--bg-1) !important;
+}
+
+.esri-measurement-widget-content__measurement-item__value {
+    font-size: 1rem;
+    color: var(--text-1) !important;
+    font-weight: bold;
+    margin: 0rem 1rem;
+    margin-bottom: 1rem;
+}
+.esri-measurement-widget-content__measurement-item{
+    margin-bottom: 1rem;
+}
+
+

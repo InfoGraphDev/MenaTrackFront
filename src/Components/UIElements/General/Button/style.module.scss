@@ -1,0 +1,59 @@
+.typeTwo, .typeOne {
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; 
+    transition: all .3s;
+    &:hover{}
+}
+
+
+.typeTwo:hover, .typeOne:hover {
+    background-color: var(--bg-2) !important;
+    color: var(--text-3);
+
+    &:hover, &:focus, &:active {
+        path {
+            stroke:var(--bg-3); 
+          }
+      
+    }
+
+}
+
+.typeTwo:active, .typeOne:active {
+    background-color:  #202D61;
+    color: var(--text-3);
+    transition: all .3s;
+}
+
+.typeTwo:disabled, .typeOne:disabled {
+    background-color: var(--bg-8) !important;
+    color: var(--text-4) !important;
+    transition: all .3s;
+    border: 1px solid silver;
+    opacity: .7;
+    path {
+        stroke:  var(--text-4) ; 
+      }
+
+}
+
+
+.loading{
+    background-color: var(--bg-1) !important;
+    min-width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.typeTwo {
+    background-color:var(--bg-3);
+    color: var(--text-1);
+    border: $md-border-1;
+    
+}
+
+.typeOne {
+    background-color: var(--bg-1) !important;
+    color: var(--text-3);
+}

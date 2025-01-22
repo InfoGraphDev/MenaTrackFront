@@ -1,0 +1,85 @@
+.container {
+  padding: 1rem;
+}
+
+.accordion {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #ff7f27, #ff3e3e);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.accordionHeader:hover {
+  background: linear-gradient(to right, #ff3e3e, #ff7f27);
+}
+
+.card {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 5px solid #ff7f27;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background: #fafafa;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}

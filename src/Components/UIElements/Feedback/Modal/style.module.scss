@@ -1,0 +1,20 @@
+.modal{
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed;
+    left: 0; 
+    top: 0;
+    z-index: 100000000000;
+    animation: fade-in .5s ease-in-out;
+    background: linear-gradient(to bottom right,rgba(0, 0, 0, 0.295), rgba(192, 192, 192, 0.26));  
+}
+  
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

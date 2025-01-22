@@ -1,0 +1,7 @@
+.container{
+    position: fixed;
+    &.arabic{ left: .3rem; }
+    &.english{ right:.3rem; }
+    top: .5rem;
+} 
+

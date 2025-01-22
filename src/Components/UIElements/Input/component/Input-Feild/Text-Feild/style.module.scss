@@ -1,0 +1,24 @@
+@import "../../../style/style.module";
+
+  .containerField{
+    position: relative;
+    @extend %containerFeild;
+    input{
+      width: 95% !important;
+    }
+    .PasswordIcon{
+      font-size: 1.4rem;
+      width: 2rem;
+      cursor: pointer;
+      position: absolute;
+      top: .7rem;
+    }
+    .containerInputField{
+      width: 90%;
+    }
+  }
+
+  .containerAll{
+    position: relative;
+  }
+

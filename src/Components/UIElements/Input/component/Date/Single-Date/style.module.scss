@@ -1,0 +1,40 @@
+.container{
+  position: relative;
+  .containerDate{
+    display: flex;
+    padding: 1rem 0.75rem;
+    align-items: center;
+    gap: .25rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: $md-border-3;
+    background:var(--bg-3);
+    height: 3rem;   
+    position: relative;
+    &.focusElement{
+        border-radius: 0.5rem;
+        border: $md-border-1;
+        background: var(--bg-3);
+        .inputField{
+          background-color: var(--bg-3)
+        }
+      }
+  
+
+    .flatPicker{
+        flex-grow: 1;
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+}
+
+.ApprovalField{
+    border: $md-border-success;
+
+  }
+.ErrorField{
+    border: $md-border-error;
+  }
+
+}

@@ -1,0 +1,12 @@
+.SelectLanguagePc{
+    @media (max-width: $break-point) {
+        display: none;
+    }      
+}
+
+.SelectLanguageMobile{
+    display: none;
+    @media (max-width: $break-point) {
+        display: block;
+    }      
+}

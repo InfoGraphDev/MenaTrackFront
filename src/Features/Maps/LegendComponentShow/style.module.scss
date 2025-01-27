@@ -6,9 +6,9 @@
     background-color: var(--bg-3);
     border: 1px solid var(--bg-1, #ddd);
     border-radius: 8px;
-    width: 16.8rem;
+    width: 16.2rem;
     position: fixed;
-    left: .5rem;
+    left: .8rem;
     bottom: 6rem;
 }
   
@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: .1rem;
   }
   
   .legendSquare {
@@ -33,8 +34,7 @@
   }
   
   .legendText {
-    font-size: 14px;
-    color: var(--text-color, #333);
-    font-weight: 500;
+    color: var(--text-1);
+    font-weight: bold;
   }
   

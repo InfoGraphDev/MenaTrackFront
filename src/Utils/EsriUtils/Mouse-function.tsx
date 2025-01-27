@@ -77,15 +77,11 @@ export function MouseFunction({
         if (response.results.length > 0) {
           const clickedGraphic = response.results[0].graphic;
           const attributes = clickedGraphic?.attributes;
-          
 
-       
-          if (attributes?.AllowClick && attributes.IntersectLayer) {
-            setModalStatus([{ type: "LayerInfo", value: attributes }]);
+          if (attributes?.AllowClick) {
+            setModalStatus([{ type: "DetailPointModal", value: attributes }]);
           }
-          if (attributes?.AllowClick && !attributes.IntersectLayer) {
-            setModalStatus([{ type: "AttributeInfo", value: attributes }]);
-          }
+          
         }
       })
       .catch((error: any) => {

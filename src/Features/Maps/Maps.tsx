@@ -1,5 +1,5 @@
 import FunctionalityButton from '@/Components/FeaturesComponent/FunctionalityButton';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { CreateMapView } from '@/Utils/EsriUtils/CreateMapView';
 import { MouseFunction } from '@/Utils/EsriUtils/Mouse-function';
 import BaseMapComponent from '@/Components/FeaturesComponent/BaseMap/BaseMap';
@@ -14,12 +14,14 @@ import { useDispatch } from 'react-redux';
 import { useModalContext } from '@/Components/UIElements/Feedback/Modal/hook';
 import WelcomePage from '../WelcomePage';
 import { useUserContext } from '@/Context/ContextApi/UserContext';
-import LegendComponentShow from '../LegendComponentShow';
 import useArcGISLayerComponent from './ArcGISLayerComponent';
 import { SideBarSelectInfoReducer } from '@/Context/Redux/Reducer/MainReducer';
 import { ComplainConstant } from '@/Core/Constant/DataComplain';
-import TextSymbol from '@arcgis/core/symbols/TextSymbol';
 import Graphic from '@arcgis/core/Graphic';
+import TextSymbol from '@arcgis/core/symbols/TextSymbol';
+import LegendComponentShow from './LegendComponentShow';
+import { useForm } from 'react-hook-form';
+import FilterComponentTRC from './FilterComponent';
 
 const MapContainerMain: React.FC = () => {
   const mapRef=useRef(null);
@@ -37,7 +39,25 @@ const MapContainerMain: React.FC = () => {
   const location = useLocation();  
   const [LoadingMain,setLoadingMain]=useState(false);
   const {ListData,loading}=useArcGISLayerComponent({esriToken});
+  const formOptionsData = useForm<FormData>({mode: 'all'});
+  const [DataWillUseAfterFilter,setDataWillUseAfterFilter]=useState([]);
 
+  useMemo(()=>{
+      function filterComplaints(data, filterCriteria) {
+        return data.filter(complaint => {
+            return Object.keys(filterCriteria).every(key => {
+                if (filterCriteria[key]) {
+                    const complaintValue = complaint[key] ? complaint[key].toString().toLowerCase() : '';
+                    const filterValue = filterCriteria[key].toString().toLowerCase();
+                    return complaintValue.includes(filterValue);
+                }
+                return true; 
+            });
+        });
+    }  
+    setDataWillUseAfterFilter(filterComplaints(ListData,formOptionsData?.watch()));
+  },[ListData,JSON.stringify(formOptionsData?.watch())])
+  
 
   const getQueryParams = () => {
     const searchParams = new URLSearchParams(location.search);
@@ -47,9 +67,9 @@ const MapContainerMain: React.FC = () => {
   const { OBJECTID } = getQueryParams();
     
   useEffect(()=>{
-    if(ListData?.length==0)return;
-    dispatch(SideBarSelectInfoReducer({ value: "0", data: ListData,itemSelect:ListData?.filter((data)=>(data?.OBJECTID==OBJECTID))}));
-  },[ListData]);
+    if(DataWillUseAfterFilter?.length==0)return;
+    dispatch(SideBarSelectInfoReducer({ value: "0", data: DataWillUseAfterFilter,itemSelect:DataWillUseAfterFilter?.filter((data)=>(data?.OBJECTID==OBJECTID))}));
+  },[DataWillUseAfterFilter]);
 
   useEffect(()=>{
       if(!mapRef?.current) return;
@@ -71,26 +91,18 @@ const MapContainerMain: React.FC = () => {
     }
   },[view]);
   
-  useEffect(() => {
-    if (view && graphicLayerRef && graphicLayerMainBoundary) {
-      async function GetDataMain() {
-
-      }
-      GetDataMain();
-    }
-  }, [view, graphicLayerMainBoundary, graphicLayerRef]);
-        
   if(!esriToken){
     return(<WelcomePage/>)
   };
 
 useEffect(()=>{
-  if(ListData?.length==0){
+  if(DataWillUseAfterFilter?.length==0){
     return
   }
 
- setTimeout(() => {
-  const createCustomMarker = (color = "#FF0000", width = 30, height = 35, text = "C") => {
+  let ItemSelect=DataWillUseAfterFilter?.filter((data)=>(data?.OBJECTID==OBJECTID));
+
+  const createCustomMarker = (color = "#FF0000", width = 40, height = 40, text = "C") => {
     const xmlns = "http://www.w3.org/2000/svg";
     const svg = document.createElementNS(xmlns, "svg");
     svg.setAttribute("width", width);
@@ -128,12 +140,13 @@ useEffect(()=>{
     return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgData)}`;
   };
 
-  ListData?.forEach((data) => {
+  DataWillUseAfterFilter?.forEach((data) => {
     const color = ComplainConstant.CategoryColor[data.Category] || "gray";
     const markerSymbol = {
       type: "picture-marker",
       url: createCustomMarker(color, 30, 35, "C"),
-  
+      width: "20px",
+      height: "25px"
     };
 
     const textSymbol = new TextSymbol({
@@ -149,28 +162,26 @@ useEffect(()=>{
       yoffset: -18,
     });
 
-    const geometry = {
-      type: "point",
-      longitude: data.Longitude,
-      latitude: data.Latitude,
-    };
-
     const pointGraphic = new Graphic({
-      geometry,
+      geometry:data?.geometry,
       symbol: markerSymbol,
       attributes: { ...data, AllowClick: true },
     });
 
     const textGraphic = new Graphic({
-      geometry,
+      geometry:data?.geometry,
       symbol: textSymbol,
       attributes: { ...data, AllowClick: true },
     });
 
     graphicPointRef.addMany([pointGraphic, textGraphic]);
+    view.goTo({
+      target: ItemSelect[0]?.geometry,
+      zoom: 22
+    });
+
   });
- }, 3000);
-},[ListData])
+},[DataWillUseAfterFilter])
 
   return (
     <>
@@ -187,8 +198,9 @@ useEffect(()=>{
                    ref={mapRef}  style={{height:"100vh"}}></div>
                 {(view)&&
                     <> 
-                        <FunctionalityButton/>
                         <LegendComponentShow/>
+                        <FilterComponentTRC formOptions={formOptionsData}/>
+                        <FunctionalityButton/>
                                   {!MainGroupLayerWasCreat&&
                                     <MainFeatureLayerComponent 
                                       setMainGroupLayerWasCreat={setMainGroupLayerWasCreat} 

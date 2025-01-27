@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styles from "./style.module.scss";
 import { useModalContext } from './hook';
 import ListDetailComplain from './component/ListDetailComplain';
+import DetailPointModal from './component/DetailPoint';
 
 interface ModalInterface{
   children?:React.ReactNode,
@@ -45,6 +46,7 @@ const ModalComponent = ({ children }:ModalInterface) => {
           <div className={styles.modal}>
               <div ref={modalRef}>
                   {(ValueCheck?.type=="ListDetailComplain")&&<ListDetailComplain DataUse={ValueCheck?.value}/>}
+                  {(ValueCheck?.type=="DetailPointModal")&&<DetailPointModal DataUse={ValueCheck?.value}/>}
               </div>
           </div>
       )

@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 export interface TypeModal {
-  type: "ListDetailComplain";
+  type: "ListDetailComplain" | "DetailPointModal";
   value: any;
 }
 

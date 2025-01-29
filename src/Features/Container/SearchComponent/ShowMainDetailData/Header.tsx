@@ -19,8 +19,8 @@ export function useHeaderDataComplain() {
         active:true
       },
       {
-        accessorKey: "Subsecriber_National_No",
-        header: t("رقم وطني للمشترك"),
+        accessorKey: "Reference_No",
+        header: t("الرقم المرجعي"),
         sort: true,
         active:true
       },

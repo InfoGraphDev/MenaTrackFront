@@ -37,8 +37,7 @@ const MapContainerMain: React.FC = () => {
   const dispatch=useDispatch();
   const {esriToken}=useUserContext();
   const location = useLocation();  
-  const [LoadingMain,setLoadingMain]=useState(false);
-  const {ListData,loading}=useArcGISLayerComponent({esriToken});
+  const {ListData}=useArcGISLayerComponent({esriToken});
   const formOptionsData = useForm<FormData>({mode: 'all'});
   const [DataWillUseAfterFilter,setDataWillUseAfterFilter]=useState([]);
 
@@ -61,14 +60,14 @@ const MapContainerMain: React.FC = () => {
 
   const getQueryParams = () => {
     const searchParams = new URLSearchParams(location.search);
-    const OBJECTID  = searchParams.get('OBJECTID');
-    return { OBJECTID };
+    const Reference_No  = searchParams.get('Reference_No');
+    return { Reference_No };
   };
-  const { OBJECTID } = getQueryParams();
+  const { Reference_No } = getQueryParams();
     
   useEffect(()=>{
     if(DataWillUseAfterFilter?.length==0)return;
-    dispatch(SideBarSelectInfoReducer({ value: "0", data: DataWillUseAfterFilter,itemSelect:DataWillUseAfterFilter?.filter((data)=>(data?.OBJECTID==OBJECTID))}));
+    dispatch(SideBarSelectInfoReducer({ value: "0", data: DataWillUseAfterFilter,itemSelect:DataWillUseAfterFilter?.filter((data)=>(data?.Reference_No==Reference_No))}));
   },[DataWillUseAfterFilter]);
 
   useEffect(()=>{
@@ -95,12 +94,14 @@ const MapContainerMain: React.FC = () => {
     return(<WelcomePage/>)
   };
 
+console.log(DataWillUseAfterFilter);
+
 useEffect(()=>{
   if(DataWillUseAfterFilter?.length==0){
     return
   }
 
-  let ItemSelect=DataWillUseAfterFilter?.filter((data)=>(data?.OBJECTID==OBJECTID));
+  let ItemSelect=DataWillUseAfterFilter?.filter((data)=>(data?.Reference_No==Reference_No));
 
   const createCustomMarker = (color = "#FF0000", width = 40, height = 40, text = "C") => {
     const xmlns = "http://www.w3.org/2000/svg";
@@ -193,7 +194,6 @@ useEffect(()=>{
       setgraphicLayerRef,
       setgraphicPointRef}}>
             <>
-            {LoadingMain&&<WelcomePage/>}
               <div className={`${styles.containerMap}`}  
                    ref={mapRef}  style={{height:"100vh"}}></div>
                 {(view)&&

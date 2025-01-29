@@ -1,13 +1,8 @@
 import React, { useLayoutEffect } from 'react';
 import axios from 'axios';
 import qs from 'qs';
-// import esriId from '@arcgis/core/identity/IdentityManager';
-// import esriConfig from '@arcgis/core/config';
 import WelcomePage from '@/Features/WelcomePage';
 import { useUserContext } from '@/Context/ContextApi/UserContext';
-
-// const portalUrl = import.meta.env.VITE_PORTAL_URL as string;
-// esriConfig.portalUrl = portalUrl;
 
 const getAndRegisterEsriToken = async () => {
   return await createNewToken();
@@ -35,12 +30,9 @@ const createNewToken = async () => {
 
     const rInfo = {
       expires: res.data.expires,
-      server: import.meta.env.VITE_PORTAL_URL_SERVER,
       token: res.data.token,
       userId: data.username,
     };
-    // esriId.registerToken(rInfo);
-    // esriConfig.portalUrl = import.meta.env.VITE_PORTAL_URL_SERVER;
     return rInfo;
   } catch (error) {
     console.error('An error occurred while creating a new token:', error);

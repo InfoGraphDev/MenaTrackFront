@@ -1,12 +1,12 @@
 .filterContainer {
     position: fixed;
     left: 4rem;
-    top: 0;
-    width: 18rem;
+    top: 0.5rem;
+    width: 28rem;
     background: var(--bg-3);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     border-radius: .5rem;
-    padding: 1rem;
+    padding: .5rem;
     transition: transform 0.3s ease-in-out;
 }
   
@@ -15,6 +15,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin-top: .5rem;
   }
   
   .show {

@@ -22,6 +22,7 @@ import TextSymbol from '@arcgis/core/symbols/TextSymbol';
 import LegendComponentShow from './LegendComponentShow';
 import { useForm } from 'react-hook-form';
 import FilterComponentTRC from './FilterComponent';
+import Point from '@arcgis/core/geometry/Point';
 
 const MapContainerMain: React.FC = () => {
   const mapRef=useRef(null);
@@ -163,22 +164,36 @@ useEffect(()=>{
       yoffset: -18,
     });
 
+    console.log(data?.Longitude);
+    console.log(data?.Latitude);
+
+    const pointGeometry = new Point({
+      longitude: data?.Longitude,
+      latitude: data?.Latitude
+    });
+
     const pointGraphic = new Graphic({
-      geometry:data?.geometry,
+      geometry:pointGeometry,
       symbol: markerSymbol,
       attributes: { ...data, AllowClick: true },
     });
 
     const textGraphic = new Graphic({
-      geometry:data?.geometry,
+      geometry:pointGeometry,
       symbol: textSymbol,
       attributes: { ...data, AllowClick: true },
     });
 
     graphicPointRef.addMany([pointGraphic, textGraphic]);
+
+    const pointGeometryMain = new Point({
+      longitude: ItemSelect[0]?.Longitude,
+      latitude: ItemSelect[0]?.Latitude
+    });
+
     view.goTo({
-      target: ItemSelect[0]?.geometry,
-      zoom: 22
+      target: pointGeometryMain,
+      zoom: 18
     });
 
   });

@@ -8,6 +8,12 @@
     border-radius: .5rem;
     padding: .5rem;
     transition: transform 0.3s ease-in-out;
+    height: auto;
+    .containerButton{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
 }
   
   .filterContent {

@@ -20,12 +20,6 @@ export function useListDetailComplain() {
       active: true,
     },
     {
-      accessorKey: "Status",
-      header: "الحالة",
-      sort: true,
-      active: true,
-    },
-    {
       accessorKey: "Directed_To",
       header: "موجهة لـ",
       sort: true,
@@ -37,36 +31,7 @@ export function useListDetailComplain() {
       sort: true,
       active: true,
     },
-    {
-      accessorKey: "Details",
-      header: "التفاصيل",
-      sort: true,
-      active: true,
-    },
-    {
-      accessorKey: "Service_Provider",
-      header: "الشركة المقدمة للخدمة",
-      sort: true,
-      active: true,
-    },
-    {
-      accessorKey: "Category",
-      header: "الفئة",
-      sort: true,
-      active: true,
-    },
-    {
-      accessorKey: "Sub_Category",
-      header: "الفئة الجزئية",
-      sort: true,
-      active: true,
-    },
-    {
-      accessorKey: "Classification",
-      header: "التصنيف الفرعي",
-      sort: true,
-      active: true,
-    },
+    
     {
       accessorKey: "Creation_Date",
       header: "تاريخ الإنشاء",

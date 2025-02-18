@@ -41,23 +41,24 @@ const MapContainerMain: React.FC = () => {
   const {ListData}=useArcGISLayerComponent({esriToken});
   const formOptionsData = useForm<FormData>({mode: 'all'});
   const [DataWillUseAfterFilter,setDataWillUseAfterFilter]=useState([]);
-
-  useMemo(()=>{
-      function filterComplaints(data, filterCriteria) {
+  
+  useMemo(() => {
+    function filterComplaints(data, filterCriteria) {
         return data.filter(complaint => {
             return Object.keys(filterCriteria).every(key => {
                 if (filterCriteria[key]) {
-                    const complaintValue = complaint[key] ? complaint[key].toString().toLowerCase() : '';
-                    const filterValue = filterCriteria[key].toString().toLowerCase();
+                    const complaintValue = complaint[key] ? String(complaint[key]).toLowerCase() : '';
+                    const filterValue = String(filterCriteria[key]).toLowerCase();
                     return complaintValue.includes(filterValue);
                 }
                 return true; 
             });
         });
-    }  
-    setDataWillUseAfterFilter(filterComplaints(ListData,formOptionsData?.watch()));
-  },[ListData,JSON.stringify(formOptionsData?.watch())])
-  
+    }
+
+    setDataWillUseAfterFilter(filterComplaints(ListData, formOptionsData?.watch()));
+}, [ListData, JSON.stringify(formOptionsData?.watch())]);
+
 
   const getQueryParams = () => {
     const searchParams = new URLSearchParams(location.search);
@@ -68,7 +69,10 @@ const MapContainerMain: React.FC = () => {
     
   useEffect(()=>{
     if(DataWillUseAfterFilter?.length==0)return;
-    dispatch(SideBarSelectInfoReducer({ value: "0", data: DataWillUseAfterFilter,itemSelect:DataWillUseAfterFilter?.filter((data)=>(data?.Reference_No==Reference_No))}));
+    let DataWillUseMain=DataWillUseAfterFilter?.filter((data)=>(data?.Reference_No==Reference_No));
+    if(DataWillUseMain[0]){
+      dispatch(SideBarSelectInfoReducer({ value: "0", data: DataWillUseAfterFilter,itemSelect:DataWillUseAfterFilter?.filter((data)=>(data?.Reference_No==Reference_No))}));
+    }
   },[DataWillUseAfterFilter]);
 
   useEffect(()=>{
@@ -95,11 +99,10 @@ const MapContainerMain: React.FC = () => {
     return(<WelcomePage/>)
   };
 
-console.log(DataWillUseAfterFilter);
-
 useEffect(()=>{
   if(DataWillUseAfterFilter?.length==0){
-    return
+    graphicPointRef?.removeAll();
+    return;
   }
 
   let ItemSelect=DataWillUseAfterFilter?.filter((data)=>(data?.Reference_No==Reference_No));
@@ -143,12 +146,12 @@ useEffect(()=>{
   };
 
   DataWillUseAfterFilter?.forEach((data) => {
-    const color = ComplainConstant.CategoryColor[data.Category] || "gray";
+    const color = ComplainConstant.CategoryColor[data.Category] || "#FF4500"; 
     const markerSymbol = {
       type: "picture-marker",
-      url: createCustomMarker(color, 30, 35, "C"),
-      width: "20px",
-      height: "25px"
+      url: createCustomMarker(color, 35, 35, "C"),
+      width: "35px",
+      height: "35px"
     };
 
     const textSymbol = new TextSymbol({
@@ -163,9 +166,6 @@ useEffect(()=>{
       haloSize: "1px",
       yoffset: -18,
     });
-
-    console.log(data?.Longitude);
-    console.log(data?.Latitude);
 
     const pointGeometry = new Point({
       longitude: data?.Longitude,
@@ -214,7 +214,9 @@ useEffect(()=>{
                 {(view)&&
                     <> 
                         <LegendComponentShow/>
-                        <FilterComponentTRC formOptions={formOptionsData}/>
+                        <FilterComponentTRC 
+                          formOptions={formOptionsData} 
+                          DataWillUseAfterFilter={DataWillUseAfterFilter}/>
                         <FunctionalityButton/>
                                   {!MainGroupLayerWasCreat&&
                                     <MainFeatureLayerComponent 
